@@ -18,7 +18,7 @@ If this has enough support I will start work on the multithreaded miner.
 
 2. Go into the repository's directory.
    
-3. Run `docker-compose up`. `Crrl + C` Cancels it.
+3. Run `docker-compose up`. `Ctrl + C` Cancels it.
 
 4. To test, first go to `http://localhost:6969/` on your browser, you should see this: `//\(oo)/\\ Congrats, the server is working! //\(oo)/\\`. This server will be exposed on your local network, so you can also access it from other computers, `http://<server_ip_here>:6969/`.
 
