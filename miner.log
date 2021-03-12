@@ -131,3 +131,65 @@
 2021-03-12 07:42:56 	 STAT 	 Accepted share: 3949440 Difficulty: 68605
 2021-03-12 07:42:59 	 STAT 	 Accepted share: 494695 Difficulty: 68605
 2021-03-12 07:43:28 	 STAT 	 Accepted share: 3931264 Difficulty: 68605
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-12 18:19:19 	 BOOT 	 Started Dockerized mini miner
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-12 18:20:23 	 BOOT 	 Started Dockerized mini miner
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-12 18:21:59 	 BOOT 	 Started Dockerized mini miner
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-12 18:23:03 	 BOOT 	 Started Dockerized mini miner
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-12 18:26:13 	 BOOT 	 Started Dockerized mini miner
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-12 18:30:01 	 BOOT 	 Started Dockerized mini miner
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-12 19:00:25 	 BOOT 	 Started Dockerized mini miner
+2021-03-12 19:00:50 	 STAT 	 Server test succesful.
+2021-03-12 19:00:55 	 STAT 	 Checking logs...
+2021-03-12 19:01:10 	 STAT 	 Mining for Alicia426
+2021-03-12 19:01:10 	 STAT 	 Using Lower Mining Difficulty: True
+2021-03-12 19:01:17 	 STAT 	 Accepted share: 1708490 Difficulty: 30000
+2021-03-12 19:01:22 	 STAT 	 Accepted share: 2291749 Difficulty: 30000
+2021-03-12 19:01:28 	 STAT 	 Accepted share: 2571347 Difficulty: 30000
+2021-03-12 19:01:30 	 STAT 	 Accepted share: 439241 Difficulty: 30000
+2021-03-12 19:01:34 	 STAT 	 Checking logs...
+2021-03-12 19:01:34 	 STAT 	 Accepted share: 1574416 Difficulty: 30000
+2021-03-12 19:01:36 	 STAT 	 Accepted share: 551868 Difficulty: 30000
+2021-03-12 19:01:38 	 STAT 	 Accepted share: 751829 Difficulty: 30000
+2021-03-12 19:01:43 	 STAT 	 Accepted share: 2012975 Difficulty: 30000
+2021-03-12 19:01:45 	 STAT 	 Accepted share: 914380 Difficulty: 30000
+2021-03-12 19:01:51 	 STAT 	 Accepted share: 2411110 Difficulty: 30000
+2021-03-12 19:01:54 	 STAT 	 Accepted share: 1201836 Difficulty: 30000
+2021-03-12 19:01:56 	 STAT 	 Accepted share: 712496 Difficulty: 30000
+2021-03-12 19:01:59 	 STAT 	 Accepted share: 1383637 Difficulty: 30000
+2021-03-12 19:02:02 	 STAT 	 Accepted share: 1053978 Difficulty: 30000
+2021-03-12 19:02:05 	 STAT 	 Accepted share: 872680 Difficulty: 30000
+2021-03-12 19:02:10 	 STAT 	 Accepted share: 2265248 Difficulty: 30000
+2021-03-12 19:02:13 	 STAT 	 Accepted share: 1076991 Difficulty: 30000
+2021-03-12 19:02:19 	 STAT 	 Accepted share: 67287 Difficulty: 30000
+2021-03-12 19:02:25 	 STAT 	 Accepted share: 2542064 Difficulty: 30000
+2021-03-12 19:02:29 	 STAT 	 Accepted share: 1370391 Difficulty: 30000
+2021-03-12 19:02:35 	 STAT 	 Accepted share: 87795 Difficulty: 30000
+2021-03-12 19:02:41 	 STAT 	 Accepted share: 2417479 Difficulty: 30000
+2021-03-12 19:02:45 	 STAT 	 Accepted share: 1688845 Difficulty: 30000
+2021-03-12 19:02:46 	 STAT 	 Accepted share: 258605 Difficulty: 30000
+2021-03-12 19:02:47 	 STAT 	 Accepted share: 5307 Difficulty: 30000
+2021-03-12 19:02:53 	 STAT 	 Accepted share: 2681712 Difficulty: 30000
+2021-03-12 19:02:58 	 STAT 	 Accepted share: 1893067 Difficulty: 30000
+2021-03-12 19:03:01 	 STAT 	 Accepted share: 1250437 Difficulty: 30000
+2021-03-12 19:03:07 	 STAT 	 Accepted share: 2607422 Difficulty: 30000
+2021-03-12 19:03:14 	 STAT 	 Accepted share: 2568884 Difficulty: 30000
+2021-03-12 19:03:16 	 STAT 	 Accepted share: 726472 Difficulty: 30000
+2021-03-12 19:03:20 	 STAT 	 Accepted share: 1557672 Difficulty: 30000
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-12 20:24:22 	 BOOT 	 Started Dockerized mini miner
+2021-03-12 20:26:40 	 STAT 	 Checking logs...

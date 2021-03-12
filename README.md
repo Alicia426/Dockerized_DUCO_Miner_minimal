@@ -18,7 +18,7 @@ If this has enough support I will start work on the multithreaded miner.
 
 2. Go into the repository's directory.
    
-3. Run `docker-compose up`. `Crrl + C` Cancels it.
+3. Run `docker-compose up`. `Ctrl + C` Cancels it.
 
 4. To test, first go to `http://localhost:6969/` on your browser, you should see this: `//\(oo)/\\ Congrats, the server is working! //\(oo)/\\`. This server will be exposed on your local network, so you can also access it from other computers, `http://<server_ip_here>:6969/`.
 
@@ -34,6 +34,17 @@ Examples:
 7. To mine with your container in the background use `docker-compose up -d`, this will start the container on detached mode.
 
 **Note: you may have to run docker-compose with sudo**
+
+### Troubleshooting Docker Images:
+
+If you have an error from the Alpine Linux image, you can update to the newest version:
+
+1. Clone this repository with `git clone https://github.com/Alicia426/Dockerized_DUCO_Miner_minimal.git`
+
+2. Go into the repository's directory.
+   
+3. Run `docker-compose up  --no-deps --build`. This will recreate the image from scratch, building from the official python 3.9 docker image. You can then add the `-d` flag to run it detached.
+
 
 ## Upcoming features:
 
@@ -53,6 +64,12 @@ Flask normally is exposed on port 5000, however to avoid conflicts with other fl
 
 This is hacky, not super stylish, I did it in my spare time today and I will update as needed.
 I know it's janky.
+
+## Changelog:
+
+* Fixed alpine image error.
+* Changed over to Arch Linux Docker image in Dockerfile.
+
 
 ### License:
 
