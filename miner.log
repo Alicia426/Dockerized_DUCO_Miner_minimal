@@ -1,0 +1,133 @@
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-12 06:43:31 	 BOOT 	 Started Dockerized mini miner
+2021-03-12 06:44:10 	 STAT 	 Mining for Alicia426
+2021-03-12 06:44:23 	 STAT 	 Accepted share: 2432976 Difficulty: 68548
+2021-03-12 06:44:29 	 STAT 	 Accepted share: 1136449 Difficulty: 68548
+2021-03-12 06:45:02 	 STAT 	 
+2021-03-12 06:45:02 	 ERR_ 	 Error occured: [Errno 32] Broken pipe, restarting in 5s.
+2021-03-12 06:45:08 	 ERR_ 	 Error occured: [Errno 103] Connection aborted, restarting in 5s.
+2021-03-12 06:45:30 	 STAT 	 Accepted share: 3331206 Difficulty: 68547
+2021-03-12 06:45:45 	 STAT 	 Accepted share: 3157784 Difficulty: 68547
+2021-03-12 06:45:48 	 STAT 	 Accepted share: 475671 Difficulty: 68548
+2021-03-12 06:45:54 	 STAT 	 Accepted share: 1316794 Difficulty: 68548
+2021-03-12 06:46:28 	 STAT 	 
+2021-03-12 06:46:28 	 ERR_ 	 Error occured: [Errno 32] Broken pipe, restarting in 5s.
+2021-03-12 06:46:33 	 ERR_ 	 Error occured: [Errno 103] Connection aborted, restarting in 5s.
+2021-03-12 06:46:49 	 STAT 	 Accepted share: 1879393 Difficulty: 68547
+2021-03-12 06:47:22 	 STAT 	 
+2021-03-12 06:47:22 	 ERR_ 	 Error occured: [Errno 32] Broken pipe, restarting in 5s.
+2021-03-12 06:47:27 	 ERR_ 	 Error occured: [Errno 103] Connection aborted, restarting in 5s.
+2021-03-12 06:47:52 	 STAT 	 Accepted share: 3909566 Difficulty: 68547
+2021-03-12 06:48:20 	 STAT 	 Accepted share: 6143208 Difficulty: 68548
+2021-03-12 06:48:48 	 STAT 	 Accepted share: 5956873 Difficulty: 68548
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-12 06:49:25 	 BOOT 	 Started Dockerized mini miner
+2021-03-12 06:49:37 	 STAT 	 Mining for Alicia426
+2021-03-12 06:49:37 	 ERR_ 	 Error occured: [Errno 111] Connection refused, restarting in 5s.
+2021-03-12 06:49:43 	 ERR_ 	 Error occured: [Errno 103] Connection aborted, restarting in 5s.
+2021-03-12 06:49:48 	 STAT 	 Server text succesful
+2021-03-12 06:50:02 	 STAT 	 Accepted share: 2787495 Difficulty: 30000
+2021-03-12 06:50:15 	 STAT 	 Accepted share: 2476598 Difficulty: 30000
+2021-03-12 06:50:30 	 STAT 	 Accepted share: 2920324 Difficulty: 30000
+2021-03-12 06:50:44 	 STAT 	 Accepted share: 2755605 Difficulty: 30000
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-12 06:54:01 	 BOOT 	 Started Dockerized mini miner
+2021-03-12 06:54:23 	 STAT 	 Server test succesful.
+2021-03-12 06:54:31 	 STAT 	 Mining for Alicia426
+2021-03-12 06:54:31 	 STAT 	 Using Lower Mining Difficulty: True
+2021-03-12 06:54:32 	 ERR_ 	 Error occured: [Errno 111] Connection refused, restarting in 5s.
+2021-03-12 06:54:37 	 ERR_ 	 Error occured: [Errno 103] Connection aborted, restarting in 5s.
+2021-03-12 06:54:52 	 STAT 	 Accepted share: 1649821 Difficulty: 30000
+2021-03-12 06:55:05 	 STAT 	 Accepted share: 2873185 Difficulty: 30000
+2021-03-12 06:55:11 	 STAT 	 Accepted share: 1227757 Difficulty: 30000
+2021-03-12 06:55:12 	 STAT 	 Accepted share: 79774 Difficulty: 30000
+2021-03-12 06:55:15 	 STAT 	 Accepted share: 586632 Difficulty: 30000
+2021-03-12 06:55:29 	 STAT 	 Accepted share: 2869900 Difficulty: 30000
+2021-03-12 06:55:41 	 STAT 	 Accepted share: 1461810 Difficulty: 30000
+2021-03-12 06:55:56 	 STAT 	 Accepted share: 1947853 Difficulty: 30000
+2021-03-12 06:56:10 	 STAT 	 Accepted share: 1966059 Difficulty: 30000
+2021-03-12 06:56:24 	 WARN 	 Empty buffer, likely error
+2021-03-12 06:56:24 	 ERR_ 	 Error occured: [Errno 32] Broken pipe, restarting in 5s.
+2021-03-12 06:56:30 	 ERR_ 	 Error occured: [Errno 103] Connection aborted, restarting in 5s.
+2021-03-12 06:56:48 	 STAT 	 Accepted share: 2525020 Difficulty: 30000
+2021-03-12 06:56:56 	 STAT 	 Accepted share: 1628865 Difficulty: 30000
+2021-03-12 06:57:07 	 STAT 	 Accepted share: 2186758 Difficulty: 30000
+2021-03-12 06:57:21 	 STAT 	 Accepted share: 2971375 Difficulty: 30000
+2021-03-12 06:57:25 	 STAT 	 Accepted share: 876954 Difficulty: 30000
+2021-03-12 06:57:35 	 STAT 	 Accepted share: 1949266 Difficulty: 30000
+2021-03-12 06:57:48 	 STAT 	 Accepted share: 2624916 Difficulty: 30000
+2021-03-12 06:57:50 	 STAT 	 Accepted share: 324607 Difficulty: 30000
+2021-03-12 06:57:53 	 STAT 	 Accepted share: 700233 Difficulty: 30000
+2021-03-12 06:58:09 	 STAT 	 Accepted share: 2973622 Difficulty: 30000
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-12 07:21:55 	 BOOT 	 Started Dockerized mini miner
+2021-03-12 07:22:03 	 STAT 	 Checking logs...
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-12 07:24:49 	 BOOT 	 Started Dockerized mini miner
+2021-03-12 07:25:00 	 STAT 	 Checking logs...
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-12 07:25:47 	 BOOT 	 Started Dockerized mini miner
+2021-03-12 07:25:50 	 STAT 	 Checking logs...
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-12 07:28:11 	 BOOT 	 Started Dockerized mini miner
+2021-03-12 07:28:17 	 STAT 	 Checking logs...
+2021-03-12 07:28:36 	 STAT 	 Mining for Alicia426
+2021-03-12 07:28:36 	 STAT 	 Using Lower Mining Difficulty: False
+2021-03-12 07:28:39 	 STAT 	 Checking logs...
+2021-03-12 07:28:55 	 STAT 	 Accepted share: 3761378 Difficulty: 68596
+2021-03-12 07:29:21 	 STAT 	 Accepted share: 5636032 Difficulty: 68596
+2021-03-12 07:29:41 	 STAT 	 Accepted share: 4072406 Difficulty: 68596
+2021-03-12 07:29:46 	 STAT 	 Accepted share: 1069662 Difficulty: 68597
+2021-03-12 07:29:54 	 STAT 	 Accepted share: 420059 Difficulty: 68597
+2021-03-12 07:30:14 	 STAT 	 Accepted share: 4319492 Difficulty: 68597
+2021-03-12 07:30:38 	 STAT 	 Accepted share: 4897508 Difficulty: 68597
+2021-03-12 07:31:06 	 STAT 	 Accepted share: 5333381 Difficulty: 68597
+2021-03-12 07:31:26 	 STAT 	 Accepted share: 3919888 Difficulty: 68597
+2021-03-12 07:31:41 	 STAT 	 Accepted share: 2754848 Difficulty: 68598
+2021-03-12 07:31:57 	 STAT 	 Accepted share: 1860006 Difficulty: 68598
+2021-03-12 07:32:31 	 STAT 	 Accepted share: 6031792 Difficulty: 68598
+2021-03-12 07:32:48 	 STAT 	 Accepted share: 3146192 Difficulty: 68598
+2021-03-12 07:32:58 	 STAT 	 Accepted share: 760292 Difficulty: 68599
+2021-03-12 07:33:05 	 STAT 	 Accepted share: 241157 Difficulty: 68599
+2021-03-12 07:33:20 	 STAT 	 Accepted share: 2743454 Difficulty: 68599
+2021-03-12 07:33:39 	 STAT 	 Accepted share: 3197022 Difficulty: 68599
+2021-03-12 07:33:41 	 STAT 	 Accepted share: 320260 Difficulty: 68599
+2021-03-12 07:33:52 	 STAT 	 Accepted share: 819757 Difficulty: 68599
+2021-03-12 07:34:00 	 STAT 	 Accepted share: 515896 Difficulty: 68599
+2021-03-12 07:34:25 	 STAT 	 Accepted share: 4533978 Difficulty: 68599
+2021-03-12 07:34:56 	 STAT 	 Accepted share: 5002710 Difficulty: 68600
+2021-03-12 07:35:01 	 STAT 	 Accepted share: 625432 Difficulty: 68600
+2021-03-12 07:35:12 	 STAT 	 Accepted share: 957178 Difficulty: 68600
+2021-03-12 07:35:20 	 STAT 	 Accepted share: 291676 Difficulty: 68600
+2021-03-12 07:35:33 	 STAT 	 Accepted share: 2384658 Difficulty: 68600
+2021-03-12 07:35:46 	 STAT 	 Accepted share: 2451804 Difficulty: 68600
+2021-03-12 07:36:16 	 STAT 	 Accepted share: 5397468 Difficulty: 68601
+2021-03-12 07:36:20 	 STAT 	 Accepted share: 590347 Difficulty: 68601
+2021-03-12 07:36:36 	 STAT 	 Accepted share: 1729637 Difficulty: 68601
+2021-03-12 07:36:48 	 STAT 	 Accepted share: 1185377 Difficulty: 68601
+2021-03-12 07:36:58 	 STAT 	 Accepted share: 764656 Difficulty: 68601
+2021-03-12 07:37:22 	 STAT 	 Accepted share: 3538185 Difficulty: 68601
+2021-03-12 07:37:46 	 STAT 	 Accepted share: 3707450 Difficulty: 68602
+2021-03-12 07:38:03 	 STAT 	 Accepted share: 2294203 Difficulty: 68602
+2021-03-12 07:38:12 	 STAT 	 Accepted share: 605035 Difficulty: 68602
+2021-03-12 07:38:47 	 STAT 	 Accepted share: 5006052 Difficulty: 68602
+2021-03-12 07:39:08 	 STAT 	 Accepted share: 2935094 Difficulty: 68602
+2021-03-12 07:39:09 	 STAT 	 Accepted share: 242533 Difficulty: 68603
+2021-03-12 07:39:25 	 STAT 	 Accepted share: 1395864 Difficulty: 68603
+2021-03-12 07:40:02 	 STAT 	 Accepted share: 5063982 Difficulty: 68603
+2021-03-12 07:40:36 	 STAT 	 Accepted share: 4877347 Difficulty: 68603
+2021-03-12 07:40:55 	 STAT 	 Accepted share: 2600011 Difficulty: 68604
+2021-03-12 07:41:14 	 STAT 	 Accepted share: 1869767 Difficulty: 68604
+2021-03-12 07:41:22 	 STAT 	 Accepted share: 464616 Difficulty: 68604
+2021-03-12 07:42:05 	 STAT 	 Accepted share: 5784026 Difficulty: 68604
+2021-03-12 07:42:27 	 STAT 	 Accepted share: 3158769 Difficulty: 68605
+2021-03-12 07:42:56 	 STAT 	 Accepted share: 3949440 Difficulty: 68605
+2021-03-12 07:42:59 	 STAT 	 Accepted share: 494695 Difficulty: 68605
+2021-03-12 07:43:28 	 STAT 	 Accepted share: 3931264 Difficulty: 68605
