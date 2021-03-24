@@ -24,7 +24,7 @@ class Miner:
         self.username = username
         self.UseLowerDiff = UseLowerDiff
         self.soc = socket.socket()
-        self.soc.settimeout(10)
+        self.soc.settimeout(15)
 
     def mine(self):
         current_buffer = ''
@@ -63,35 +63,38 @@ class Miner:
         return current_buffer
 
     def requestAndMine(self):
-        try:
-            # This sections grabs pool adress and port from Duino-Coin GitHub file
-            serverip = "https://raw.githubusercontent.com/revoxhere/duino-coin/gh-pages/serverip.txt"  # Serverip file
-            with urllib.request.urlopen(serverip) as content:
-                content = (
-                    content.read().decode().splitlines()
-                )  # Read content and split into lines
-            pool_address = content[0]  # Line 1 = pool address
-            pool_port = content[1]  # Line 2 = pool port
+        while True:
+            try:
+                # This sections grabs pool adress and port from Duino-Coin GitHub file
+                serverip = "https://raw.githubusercontent.com/revoxhere/duino-coin/gh-pages/serverip.txt"  # Serverip file
+                with urllib.request.urlopen(serverip) as content:
+                    content = (
+                        content.read().decode().splitlines()
+                    )  # Read content and split into lines
+                pool_address = content[0]  # Line 1 = pool address
+                pool_port = content[1]  # Line 2 = pool port
 
-            # This section connects and logs user to the server
-            # Connect to the server
-            self.soc.connect((str(pool_address), int(pool_port)))
-            server_version = self.soc.recv(3).decode()  # Get server version
-            print("Server is on version", server_version)
-            # Mining section
-            while True:
-                buff = self.mine()
-                if 'Accepted' in buff:
-                    babylog.status(buff)
-                elif 'Rejected' in buff:
-                    babylog.warn(buff)
-                else:
-                    babylog.warn('Empty buffer, likely error')
+                # This section connects and logs user to the server
+                # Connect to the server
+                self.soc.connect((str(pool_address), int(pool_port)))
+                server_version = self.soc.recv(
+                    3).decode()  # Get server version
+                babylog.status("Server is on version: "+str(server_version))
+                # Mining section
+                while True:
+                    buff = self.mine()
+                    if 'Accepted' in buff:
+                        babylog.status(buff)
+                    elif 'Rejected' in buff:
+                        babylog.warn(buff)
+                    else:
+                        babylog.warn('Empty buffer, likely error')
 
-        except Exception as e:
-            babylog.error("Error occured: " + str(e) + ", restarting in 5s.")
-            time.sleep(5)
-            self.requestAndMine()
+            except Exception as e:
+                babylog.error("Error occured: " + str(e) +
+                              ", restarting in 5s.")
+                time.sleep(5)
+                self.soc.close()
 
     def start_mining(self):
         """Starts mining as a process"""

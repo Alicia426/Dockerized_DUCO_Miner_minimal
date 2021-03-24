@@ -75,6 +75,8 @@ The multiprocessing thing is the first step in dockerizing the big miner.
 
 If y'all want a fancy looking single page application with form fields and starts top buttons, let me know.
 
+**This is now release 1.0**
+
 ## Changelog:
 
 * Fixed alpine image error.
@@ -83,6 +85,10 @@ If y'all want a fancy looking single page application with form fields and start
 * Added mining as a process, with the possibility of multithreading.
 * Improved error handling.
 * Added user friendly messages.
+* Elimitated recursion for better stability.
+* Finally got some sleep.
+* Fixed socket duplication/open connection bug.
+* Marking this as Release 1.0
 
 ### License:
 
