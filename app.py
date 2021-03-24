@@ -94,7 +94,10 @@ class Miner:
                 babylog.error("Error occured: " + str(e) +
                               ", restarting in 5s.")
                 time.sleep(5)
-                self.soc.close()
+                try:
+                    self.soc.close()
+                except Exception as e:
+                    babylog.warn(str(e))
 
     def start_mining(self):
         """Starts mining as a process"""

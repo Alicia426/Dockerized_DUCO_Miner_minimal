@@ -88,6 +88,7 @@ If y'all want a fancy looking single page application with form fields and start
 * Elimitated recursion for better stability.
 * Finally got some sleep.
 * Fixed socket duplication/open connection bug.
+* Added error handling/logging for socket.
 * Marking this as Release 1.0
 
 ### License:
