@@ -193,3 +193,140 @@
      //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
 2021-03-12 20:24:22 	 BOOT 	 Started Dockerized mini miner
 2021-03-12 20:26:40 	 STAT 	 Checking logs...
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-24 03:28:46 	 BOOT 	 Started Dockerized mini miner
+2021-03-24 03:29:11 	 STAT 	 Server test succesful.
+2021-03-24 03:29:25 	 STAT 	 Checking logs...
+2021-03-24 03:29:42 	 STAT 	 Mining for Alicia426
+2021-03-24 03:29:42 	 STAT 	 Using Lower Mining Difficulty: True
+2021-03-24 03:29:48 	 STAT 	 Accepted share: 1389774 Difficulty: 30000
+2021-03-24 03:29:50 	 STAT 	 Accepted share: 696402 Difficulty: 30000
+2021-03-24 03:29:57 	 STAT 	 Accepted share: 2932302 Difficulty: 30000
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-24 03:30:14 	 BOOT 	 Started Dockerized mini miner
+2021-03-24 03:30:23 	 STAT 	 Mining for Alicia426
+2021-03-24 03:30:23 	 STAT 	 Using Lower Mining Difficulty: True
+2021-03-24 03:30:25 	 STAT 	 Mining for Alicia426
+2021-03-24 03:30:25 	 STAT 	 Using Lower Mining Difficulty: True
+2021-03-24 03:30:28 	 STAT 	 Accepted share: 1567468 Difficulty: 30000
+2021-03-24 03:30:32 	 STAT 	 Accepted share: 1660162 Difficulty: 30000
+2021-03-24 03:30:35 	 ERR_ 	 Error occured: timed out, restarting in 5s.
+2021-03-24 03:30:37 	 STAT 	 Accepted share: 2238315 Difficulty: 30000
+2021-03-24 03:30:41 	 ERR_ 	 Error occured: [Errno 106] Transport endpoint is already connected, restarting in 5s.
+2021-03-24 03:30:43 	 STAT 	 Accepted share: 2414593 Difficulty: 30000
+2021-03-24 03:30:46 	 ERR_ 	 Error occured: [Errno 106] Transport endpoint is already connected, restarting in 5s.
+2021-03-24 03:30:48 	 STAT 	 Accepted share: 2036415 Difficulty: 30000
+2021-03-24 03:30:51 	 ERR_ 	 Error occured: [Errno 106] Transport endpoint is already connected, restarting in 5s.
+2021-03-24 03:30:52 	 STAT 	 Accepted share: 1482259 Difficulty: 30000
+2021-03-24 03:30:54 	 STAT 	 Accepted share: 651535 Difficulty: 30000
+2021-03-24 03:30:56 	 ERR_ 	 Error occured: [Errno 106] Transport endpoint is already connected, restarting in 5s.
+2021-03-24 03:30:59 	 STAT 	 Accepted share: 2164936 Difficulty: 30000
+2021-03-24 03:31:02 	 ERR_ 	 Error occured: [Errno 106] Transport endpoint is already connected, restarting in 5s.
+2021-03-24 03:31:05 	 STAT 	 Accepted share: 2500532 Difficulty: 30000
+2021-03-24 03:31:07 	 ERR_ 	 Error occured: [Errno 106] Transport endpoint is already connected, restarting in 5s.
+2021-03-24 03:31:10 	 STAT 	 Accepted share: 2258964 Difficulty: 30000
+2021-03-24 03:31:12 	 ERR_ 	 Error occured: [Errno 106] Transport endpoint is already connected, restarting in 5s.
+2021-03-24 03:31:17 	 ERR_ 	 Error occured: [Errno 106] Transport endpoint is already connected, restarting in 5s.
+2021-03-24 03:31:18 	 STAT 	 Accepted share: 2940193 Difficulty: 30000
+2021-03-24 03:31:20 	 STAT 	 Accepted share: 752054 Difficulty: 30000
+2021-03-24 03:31:22 	 ERR_ 	 Error occured: [Errno 106] Transport endpoint is already connected, restarting in 5s.
+2021-03-24 03:31:24 	 STAT 	 Accepted share: 1564451 Difficulty: 30000
+2021-03-24 03:31:25 	 STAT 	 Accepted share: 516705 Difficulty: 30000
+2021-03-24 03:31:27 	 STAT 	 Accepted share: 624834 Difficulty: 30000
+2021-03-24 03:31:28 	 ERR_ 	 Error occured: [Errno 106] Transport endpoint is already connected, restarting in 5s.
+2021-03-24 03:31:28 	 STAT 	 Accepted share: 314548 Difficulty: 30000
+2021-03-24 03:31:30 	 STAT 	 Accepted share: 620428 Difficulty: 30000
+2021-03-24 03:31:33 	 ERR_ 	 Error occured: [Errno 106] Transport endpoint is already connected, restarting in 5s.
+2021-03-24 03:31:35 	 STAT 	 Accepted share: 1973089 Difficulty: 30000
+2021-03-24 03:31:36 	 STAT 	 Accepted share: 192565 Difficulty: 30000
+2021-03-24 03:31:38 	 ERR_ 	 Error occured: [Errno 106] Transport endpoint is already connected, restarting in 5s.
+2021-03-24 03:31:39 	 STAT 	 Accepted share: 868747 Difficulty: 30000
+2021-03-24 03:31:40 	 STAT 	 Accepted share: 169714 Difficulty: 30000
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-24 03:33:03 	 BOOT 	 Started Dockerized mini miner
+2021-03-24 03:33:12 	 STAT 	 Server test succesful.
+2021-03-24 03:33:30 	 STAT 	 Mining for Alicia426
+2021-03-24 03:33:30 	 STAT 	 Using Lower Mining Difficulty: True
+2021-03-24 03:33:37 	 STAT 	 Accepted share: 2859061 Difficulty: 30000
+2021-03-24 03:33:42 	 STAT 	 Accepted share: 2081328 Difficulty: 30000
+2021-03-24 03:33:44 	 STAT 	 Accepted share: 458566 Difficulty: 30000
+2021-03-24 03:33:49 	 STAT 	 Accepted share: 2420509 Difficulty: 30000
+2021-03-24 03:33:55 	 STAT 	 Accepted share: 2129397 Difficulty: 30000
+2021-03-24 03:33:58 	 STAT 	 Accepted share: 1518838 Difficulty: 30000
+2021-03-24 03:34:01 	 STAT 	 Accepted share: 1144038 Difficulty: 30000
+2021-03-24 03:34:08 	 STAT 	 Accepted share: 2686997 Difficulty: 30000
+2021-03-24 03:34:15 	 STAT 	 Accepted share: 2896830 Difficulty: 30000
+2021-03-24 03:34:17 	 STAT 	 Accepted share: 839821 Difficulty: 30000
+2021-03-24 03:34:21 	 STAT 	 Accepted share: 1173992 Difficulty: 30000
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-24 03:34:26 	 BOOT 	 Started Dockerized mini miner
+2021-03-24 03:34:31 	 STAT 	 Mining for Alicia426
+2021-03-24 03:34:31 	 STAT 	 Using Lower Mining Difficulty: True
+2021-03-24 03:34:38 	 STAT 	 Accepted share: 1930913 Difficulty: 30000
+2021-03-24 03:34:43 	 STAT 	 Accepted share: 1944197 Difficulty: 30000
+2021-03-24 03:34:45 	 STAT 	 Accepted share: 940198 Difficulty: 30000
+2021-03-24 03:34:52 	 STAT 	 Accepted share: 2612345 Difficulty: 30000
+2021-03-24 03:34:54 	 STAT 	 Accepted share: 806549 Difficulty: 30000
+2021-03-24 03:35:00 	 STAT 	 Accepted share: 2272239 Difficulty: 30000
+2021-03-24 03:35:04 	 STAT 	 Accepted share: 1583344 Difficulty: 30000
+2021-03-24 03:35:12 	 STAT 	 Accepted share: 2408164 Difficulty: 30000
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-24 03:36:28 	 BOOT 	 Started Dockerized mini miner
+2021-03-24 03:36:38 	 STAT 	 Server test succesful.
+2021-03-24 03:36:44 	 STAT 	 Mining for Alicia426
+2021-03-24 03:36:44 	 STAT 	 Using Lower Mining Difficulty: True
+2021-03-24 03:36:44 	 STAT 	 Mining Started!
+2021-03-24 03:36:48 	 STAT 	 Accepted share: 1187059 Difficulty: 30000
+2021-03-24 03:36:48 	 STAT 	 Accepted share: 90066 Difficulty: 30000
+2021-03-24 03:36:49 	 STAT 	 Accepted share: 57440 Difficulty: 30000
+2021-03-24 03:36:51 	 STAT 	 Accepted share: 909185 Difficulty: 30000
+2021-03-24 03:36:52 	 STAT 	 Accepted share: 227946 Difficulty: 30000
+2021-03-24 03:36:53 	 STAT 	 Stopped Mining!
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-24 03:47:08 	 BOOT 	 Started Dockerized mini miner
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-24 03:48:58 	 BOOT 	 Started Dockerized mini miner
+2021-03-24 03:49:03 	 WARN 	 Tried to stop a non existent miner
+2021-03-24 03:49:09 	 STAT 	 Mining for Alicia426
+2021-03-24 03:49:09 	 STAT 	 Using Lower Mining Difficulty: True
+2021-03-24 03:49:09 	 STAT 	 Mining Started!
+2021-03-24 03:49:14 	 STAT 	 Accepted share: 1792918 Difficulty: 30000
+2021-03-24 03:49:16 	 STAT 	 Accepted share: 637768 Difficulty: 30000
+2021-03-24 03:49:19 	 STAT 	 Accepted share: 1235734 Difficulty: 30000
+2021-03-24 03:49:24 	 STAT 	 Accepted share: 2078634 Difficulty: 30000
+2021-03-24 03:49:25 	 STAT 	 Accepted share: 92737 Difficulty: 30000
+2021-03-24 03:49:31 	 STAT 	 Accepted share: 2657184 Difficulty: 30000
+2021-03-24 03:49:37 	 STAT 	 Accepted share: 2630332 Difficulty: 30000
+2021-03-24 03:49:42 	 STAT 	 Accepted share: 1681885 Difficulty: 30000
+2021-03-24 03:49:45 	 STAT 	 Accepted share: 1442334 Difficulty: 30000
+2021-03-24 03:49:50 	 STAT 	 Accepted share: 1925358 Difficulty: 30000
+2021-03-24 03:49:56 	 STAT 	 Accepted share: 2807170 Difficulty: 30000
+2021-03-24 03:50:02 	 STAT 	 Accepted share: 2139671 Difficulty: 30000
+2021-03-24 03:50:06 	 STAT 	 Accepted share: 1496236 Difficulty: 30000
+2021-03-24 03:50:07 	 STAT 	 Accepted share: 485419 Difficulty: 30000
+2021-03-24 03:50:13 	 STAT 	 Accepted share: 2353568 Difficulty: 30000
+2021-03-24 03:50:20 	 STAT 	 Accepted share: 2880111 Difficulty: 30000
+2021-03-24 03:50:22 	 STAT 	 Accepted share: 665070 Difficulty: 30000
+2021-03-24 03:50:25 	 STAT 	 Accepted share: 1337299 Difficulty: 30000
+
+     //\(oo)/\\       //\(oo)/\\          //\(oo)/\\
+2021-03-24 03:50:35 	 BOOT 	 Started Dockerized mini miner
+2021-03-24 03:50:41 	 STAT 	 Checking logs...
+2021-03-24 03:50:54 	 STAT 	 Mining for Alicia426
+2021-03-24 03:50:54 	 STAT 	 Using Lower Mining Difficulty: True
+2021-03-24 03:50:54 	 STAT 	 Mining Started!
+2021-03-24 03:51:01 	 STAT 	 Accepted share: 2420887 Difficulty: 30000
+2021-03-24 03:51:04 	 STAT 	 Accepted share: 1358499 Difficulty: 30000
+2021-03-24 03:51:11 	 STAT 	 Accepted share: 2705610 Difficulty: 30000
+2021-03-24 03:51:13 	 STAT 	 Accepted share: 764064 Difficulty: 30000
+2021-03-24 03:51:18 	 STAT 	 Accepted share: 2205207 Difficulty: 30000
+2021-03-24 03:51:22 	 STAT 	 Accepted share: 1727565 Difficulty: 30000
+2021-03-24 03:51:26 	 STAT 	 Accepted share: 1441370 Difficulty: 30000
+2021-03-24 03:51:32 	 STAT 	 Accepted share: 2507325 Difficulty: 30000

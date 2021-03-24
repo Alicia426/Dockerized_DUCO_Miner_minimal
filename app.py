@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # Minimal version of Duino-Coin PC Miner, useful for developing own apps. Created by revox 2020-2021
 # Modified by Alicia426 to run ina docker container and be able to be started with a URL
+## Addign multiprocessing to start and stop the mining thread
 import socket
 import hashlib
 import urllib.request
@@ -8,6 +9,7 @@ import time
 import os
 import babylog
 import sys  # Only python3 included libraries
+import multiprocessing
 
 from flask import Flask, request
 
@@ -19,73 +21,104 @@ soc = socket.socket()
 soc.settimeout(10)
 
 
-def mine(username, UseLowerDiff):
-    current_buffer = ''
-    if UseLowerDiff:
-        soc.send(
-            bytes("JOB," + str(username) + ",MEDIUM", encoding="utf8")
-        )  # Send job request for lower difficulty
-    else:
-        soc.send(
-            bytes("JOB," + str(username), encoding="utf8")
-        )  # Send job request
-    job = soc.recv(1024).decode()  # Get work from pool
-    # Split received data to job (job and difficulty)
-    job = job.split(",")
-    difficulty = job[2]
+class Miner:
 
-    # Calculate hash with difficulty
-    for result in range(100 * int(difficulty) + 1):
-        ducos1 = hashlib.sha1(
-            str(job[0] + str(result)).encode("utf-8")
-        ).hexdigest()  # Generate hash
-        if job[1] == ducos1:  # If result is even with job
+    def __init__(self,username, UseLowerDiff):
+       self.username=username
+       self.UseLowerDiff=UseLowerDiff
+
+    def mine(self):
+        current_buffer = ''
+        if self.UseLowerDiff:
             soc.send(
-                bytes(str(result) + ",,Minimal_PC_Miner", encoding="utf8")
-            )  # Send result of hashing algorithm to pool
-            # Get feedback about the result
-            feedback = soc.recv(1024).decode()
-            if feedback == "GOOD":  # If result was good
-                current_buffer = "Accepted share: " + \
-                    str(result)+' '+"Difficulty: "+str(difficulty)
-                break
-            elif feedback == "BAD":  # If result was bad
-                current_buffer = "Rejected share: " + \
-                    str(result)+' '+"Difficulty: "+str(difficulty)
-                break
-    return current_buffer
+                bytes("JOB," + str(self.username) + ",MEDIUM", encoding="utf8")
+            )  # Send job request for lower difficulty
+        else:
+            soc.send(
+                bytes("JOB," + str(self.username), encoding="utf8")
+            )  # Send job request
+        job = soc.recv(1024).decode()  # Get work from pool
+        # Split received data to job (job and difficulty)
+        job = job.split(",")
+        difficulty = job[2]
+
+        # Calculate hash with difficulty
+        for result in range(100 * int(difficulty) + 1):
+            ducos1 = hashlib.sha1(
+                str(job[0] + str(result)).encode("utf-8")
+            ).hexdigest()  # Generate hash
+            if job[1] == ducos1:  # If result is even with job
+                soc.send(
+                    bytes(str(result) + ",,Minimal_PC_Miner", encoding="utf8")
+                )  # Send result of hashing algorithm to pool
+                # Get feedback about the result
+                feedback = soc.recv(1024).decode()
+                if feedback == "GOOD":  # If result was good
+                    current_buffer = "Accepted share: " + \
+                        str(result)+' '+"Difficulty: "+str(difficulty)
+                    break
+                elif feedback == "BAD":  # If result was bad
+                    current_buffer = "Rejected share: " + \
+                        str(result)+' '+"Difficulty: "+str(difficulty)
+                    break
+        return current_buffer
 
 
-def requestAndMine(username, UseLowerDiff):
-    try:
-        # This sections grabs pool adress and port from Duino-Coin GitHub file
-        serverip = "https://raw.githubusercontent.com/revoxhere/duino-coin/gh-pages/serverip.txt"  # Serverip file
-        with urllib.request.urlopen(serverip) as content:
-            content = (
-                content.read().decode().splitlines()
-            )  # Read content and split into lines
-        pool_address = content[0]  # Line 1 = pool address
-        pool_port = content[1]  # Line 2 = pool port
+    def requestAndMine(self):
+        try:
+            # This sections grabs pool adress and port from Duino-Coin GitHub file
+            serverip = "https://raw.githubusercontent.com/revoxhere/duino-coin/gh-pages/serverip.txt"  # Serverip file
+            with urllib.request.urlopen(serverip) as content:
+                content = (
+                    content.read().decode().splitlines()
+                )  # Read content and split into lines
+            pool_address = content[0]  # Line 1 = pool address
+            pool_port = content[1]  # Line 2 = pool port
 
-        # This section connects and logs user to the server
-        # Connect to the server
-        soc.connect((str(pool_address), int(pool_port)))
-        server_version = soc.recv(3).decode()  # Get server version
-        print("Server is on version", server_version)
-        # Mining section
-        while True:
-            buff = mine(username, UseLowerDiff)
-            if 'Accepted' in buff:
-                babylog.status(buff)
-            elif 'Rejected' in buff:
-                babylog.warn(buff)
-            else:
-                babylog.warn('Empty buffer, likely error')
+            # This section connects and logs user to the server
+            # Connect to the server
+            soc.connect((str(pool_address), int(pool_port)))
+            server_version = soc.recv(3).decode()  # Get server version
+            print("Server is on version", server_version)
+            # Mining section
+            while True:
+                buff = self.mine()
+                if 'Accepted' in buff:
+                    babylog.status(buff)
+                elif 'Rejected' in buff:
+                    babylog.warn(buff)
+                else:
+                    babylog.warn('Empty buffer, likely error')
 
-    except Exception as e:
-        babylog.error("Error occured: " + str(e) + ", restarting in 5s.")
-        time.sleep(5)
-        requestAndMine(username, UseLowerDiff)
+        except Exception as e:
+            babylog.error("Error occured: " + str(e) + ", restarting in 5s.")
+            time.sleep(5)
+            self.requestAndMine()
+        
+    def start_mining(self):
+        """Starts mining as a process"""
+        try:
+            self.proc.terminate() # pylint: disable=access-member-before-definition
+        except AttributeError:
+            pass
+        finally:
+            self.proc = multiprocessing.Process( # pylint: disable=attribute-defined-outside-init
+                target=self.requestAndMine, args=())
+
+            self.proc.start()
+
+    def stop_mining(self):
+        """Stops mining as a process"""
+        try:
+            self.proc.terminate()
+        except Exception as e:
+            babylog.error(str(e))
+
+
+
+
+
+# Global mining object
 
 
 @app.route('/mine/<username>/<UseLowerDiff>')
@@ -97,7 +130,22 @@ def mining(username, UseLowerDiff):
     # Fetches the username and difficulty
     babylog.status('Mining for '+username)
     babylog.status('Using Lower Mining Difficulty: '+UseLowerDiff)
-    requestAndMine(username, boolUseLowerDiff)
+    global minerobj
+    minerobj=Miner(username,boolUseLowerDiff)
+    minerobj.start_mining()
+    babylog.status('Mining Started!')
+    return 'Wooohooo! Mining started! You can close this tab or window.'
+
+
+@app.route('/stop')
+def stop():
+    try:
+        minerobj.stop_mining()
+        babylog.status('Stopped Mining!')
+        return '3 ,2, 1 aaand Done! Mining stopped! You can close this tab or window.'
+    except NameError:
+        babylog.warn('Tried to stop a non existent miner')
+        return 'The miner has not started yet.'
 
 
 @app.route('/')
